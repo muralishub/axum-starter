@@ -96,6 +96,7 @@ dependencies = [
  "anyhow",
  "axum",
  "httpc-test",
+ "serde",
  "tokio",
 ]
 
