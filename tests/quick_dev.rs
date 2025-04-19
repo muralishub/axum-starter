@@ -24,3 +24,14 @@ async fn quick_dev2() -> Result<()> {
     
     
     }
+    #[tokio::test]
+    async fn quick_dev_route() -> Result<()> {
+    
+        let hc = httpc_test::new_client("http://localhost:3000")?;
+        
+        hc.do_get("/src/main.rs").await?.print().await?;
+        
+        Ok(())
+        
+        
+        }
